@@ -49,6 +49,13 @@
 #define DHCP_DOES_ARP_CHECK         0
 #define LWIP_DHCP_DOES_ACD_CHECK    0
 
+#define LWIP_MDNS_RESPONDER         1
+#define LWIP_IGMP                   1
+#define LWIP_AUTOIP                 1
+// #define MEMP_NUM_UDP_PCB            8
+#define LWIP_NUM_NETIF_CLIENT_DATA  1
+#define MEMP_NUM_SYS_TIMEOUT        (LWIP_NUM_SYS_TIMEOUT_INTERNAL + 3)
+
 #ifndef NDEBUG
 #define LWIP_DEBUG                  1
 #define LWIP_STATS                  1
